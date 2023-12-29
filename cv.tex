@@ -1,0 +1,220 @@
+\documentclass[11pt, oneside, a4paper, titlepage]{article}
+
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{geometry}
+
+\geometry{
+  a4paper,
+  left=0.1cm,
+  right=0.1cm,
+  top=0.1cm,
+  bottom=0.1cm,
+}
+\newcolumntype{R}{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{7cm}}
+
+\begin{document}
+
+\vspace*{0.2cm}
+\hbox{
+  \hspace*{0.02\linewidth}
+  \begin{minipage}{0.45\linewidth}
+    \Huge{Thomas Amighi}
+    \vspace*{0.5cm} \\
+    \Large{Software developper}
+  \end{minipage}%
+  \begin{minipage}{0.45\linewidth}
+    \begin{flushright}
+      \def\arraystretch{1.5}%
+      \begin{tabular}[t]{l@{}}
+        \textbf{Email}: \href{mailto:thomas.amighi@hotmail.com}{thomas.amighi@hotmail.com} \\
+        \textbf{Github}: \url{https://github.com/tamighi} \\
+        \textbf{Portfolio}: \url{https://tamighi.github.io}
+      \end{tabular}
+    \end{flushright}
+    \hfill
+  \end{minipage}
+}
+
+\vspace*{0.5cm}
+\begin{tcolorbox}[colframe=white, colback=white]
+
+  \begin{minipage}[t]{0.35\linewidth}
+
+    \section*{Profile}
+    I'm a passionate developer looking for
+    opportunities to grow. I have 2+ years
+    of practical and autonomous experience,
+    quickly learning accross different 
+    personal projects and thanks to my 
+    experience in a fantastic school, 
+    the school 42 (I will certainly talk
+    a lot about it). \medbreak
+    I love to share my knowledge to others 
+    and have the opportunity to learn from 
+    them. \medbreak
+    I am now continuously looking for 
+    opportunities to develop my potential, 
+    curious of what I will be able to 
+    accomplish.
+
+    \section*{Skills}
+    \small{
+      \textbf{Languages: }Typescript (React, React Native, Angular, NestJS), 
+      HTML, CSS, PHP (Symfony), C, C++
+    }
+    \vspace{0.3cm}
+    
+    \small{
+      \textbf{Database: }SQL, SQLite, Postgres
+    }
+    \vspace{0.3cm}
+
+    \small{
+      \textbf{Tools: }Git, Docker, Jira
+    }
+
+    \section*{Hobbies}
+    \begin{itemize}
+      \item{Music \\(violin, guitar)}
+      \item{Sports \\(yoga, running, ...)}
+      \item{Learning \\(finances, programming, ...)}
+    \end{itemize}
+
+    \section*{Languages}
+    \begin{itemize}
+      \item{English (Working proficiency)}
+      \item{French (Native proficiency)}
+    \end{itemize}
+
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.60\linewidth}
+
+    \section*{Working Experience}
+
+    \begin{minipage}{0.45\linewidth}
+      \textbf{Full stack developer} \\ 
+      \textbf{(Angular / Symfony)}
+    \end{minipage}
+    \begin{minipage}{0.5\linewidth}
+      \begin{flushright}
+        \underline{aug 2023 - today}
+      \end{flushright}
+    \end{minipage}
+    \vspace{0.3cm}
+
+    \emph{European commission consultant} 
+    \vspace{0.3cm}
+
+    \small{
+      I worked as an IT consultant in the European Commission's legal 
+      service department. I ensured proper migrations and maintenance of Symfony 
+      and Angular applications. I built and set up end-to-end tests with Jest, 
+      Mocha and WDIO for multiple applications, created a common and reusable 
+      library, and wrote complete tests for each client. 
+      I developed quality packages (ESLint, Prettier, ...) for frontend and 
+      backend applications and utilized Git, Jira, and Bitbucket to deliver the 
+      required changes.
+    }
+    \medbreak
+
+    \section*{Personal Projects 
+      \small\normalfont{
+        \href{https://tamighi.github.io/}{\underline{(go to portfolio)}}
+      }
+    }
+
+    \textbf{Todocal}
+    \emph{In progress, see 
+      \href{https://github.com/tamighi/todocal}{\underline{github repo}}
+    }
+    \medbreak
+
+    \small{
+      React native Calendar application to manage tasks. \\
+      I use SQLite and typeorm for the Database and shopify-restyle for the UI.
+    }
+
+    \vspace{0.4cm}
+
+    \textbf{Correction website} 
+    \emph{
+      \href{https://tamighi.github.io/work/correction-website-demo}{\underline{go to demo}}
+    }
+    \medbreak
+
+    \small{
+      This full stack website is built using React and NestJS. It is compiled 
+      with Webpack, containerized with Docker and optimized with nginx.
+
+      The backend implements an API with authentication, a PostgreSQL database, 
+      aswell as a file service and the frontend includes a custom UI library and 
+      utilizes React Query for efficient data handling with optimistic and 
+      undoable updates.
+    }
+    \vspace{0.4cm}
+
+    \textbf{Cub3D}
+    \emph{
+      \href{https://github.com/Lysique/cub3d}{\underline{go to github repo}}
+    }
+    \medbreak
+
+    This project is inspired from the game Wolfenstein3D, using a rendering 
+    technique called the RayCasting. \medbreak
+
+    It is written in C with a simple swift engine. It was coded during my 
+    programming studies in school 19, where we could go beyond what was expected.
+    \section*{Education}
+
+    \begin{minipage}{0.45\linewidth}
+      \textbf{School 19}
+    \end{minipage}
+    \begin{minipage}{0.5\linewidth}
+      \begin{flushright}
+        \underline{Aug 2021 - July 2022}
+      \end{flushright}
+    \end{minipage}
+    \vspace{0.4cm}
+
+    \small{
+      Deep dive into programmation with C, C++ and Typescript. The school 19 
+      (42 network) proposes an interesting way of learning; no teacher, hands 
+      on projects and peer to peer evaluation. We construct projects 
+      independently and collaboratively with fellow students, and we assess 
+      each other's work.
+      This was the best way for me to learn programming, allowing me to develop 
+      projects autonomously from scratch.
+    }
+    \vspace{0.2cm}
+
+    \vspace{0.5cm}
+
+    \begin{minipage}{0.45\linewidth}
+      \textbf{ULB}
+    \end{minipage}
+    \begin{minipage}{0.5\linewidth}
+      \begin{flushright}
+        \underline{Sep 2015 - June 2021}
+      \end{flushright}
+    \end{minipage}
+    \vspace{0.4cm}
+
+    \small{
+      Bachelor and master's degree in neuropsychology in the Free University 
+      of Brussel. Although I eventually chose a different path, these studies 
+      proved valuable through two internships and my thesis. These experiences 
+      involved undertaking projects such as implementing a study to analyze the 
+      impact of school facilities on children's well-being or investigating 
+      abstract letter representation. They also equipped me with skills in data 
+      analysis, scientific report writing, and oral presentations.
+    }
+
+  \end{minipage}
+
+\end{tcolorbox}
+
+\end{document}
