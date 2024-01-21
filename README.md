@@ -9,3 +9,9 @@
 ```sh
 latex cv.tex && dvipdf dv.dvi
 ```
+
+## Show
+
+```sh
+evince cv.pdf
+```
